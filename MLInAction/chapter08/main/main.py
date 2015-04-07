@@ -1,4 +1,4 @@
-from service import regress
+from chapter08.service import regress
 from numpy import *
 xArr,yArr=regress.loadDataSet("../data/ex0.txt")
 ws=regress.standRegres(xArr, yArr)
