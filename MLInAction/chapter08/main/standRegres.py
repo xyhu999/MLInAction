@@ -8,7 +8,7 @@ yMat=mat(yArr)
 import matplotlib.pyplot as plt
 fig=plt.figure()
 ax=fig.add_subplot(111)
-ax.scatter(xMat[:,1].flatten().A[0],yMat.T[:,0].flatten().A[0])
+ax.scatter(xMat[:,1],yMat.T[:,0])
 xCopy=xMat.copy()
 xCopy.sort(0)
 yHat=xCopy*ws
